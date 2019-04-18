@@ -45,21 +45,7 @@
     }
     
     & button {
-      border: none;
-      background: none;
-      background: $color-malachite;
       border: 14px solid $color-pale-sky;
-      border-radius: 80px;
-      padding: 30px 70px 30px 70px;
-      font-weight: 700;
-      font-size: 24px;
-      text-transform: uppercase;
-      color: $color-white;
-      margin: 20px 0 0 0;
-      @include media('<lg') {
-        padding: 20px 30px 20px 30px;
-        font-size: 18px;
-      }
     }
   }
 }

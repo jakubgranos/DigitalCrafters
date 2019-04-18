@@ -14,6 +14,8 @@
 @import 'helpers/fonts.scss';
 @import 'helpers/typography.scss';
 @import 'helpers/reset.scss';
+@import 'helpers/universal-class.scss';
+
 
 /* Components
     ========================================================================== */
@@ -26,3 +28,4 @@
    ========================================================================== */
 @import 'modules/hero.scss';
 @import 'modules/header.scss';
+@import 'modules/testimonials.scss';
