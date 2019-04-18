@@ -1,0 +1,117 @@
+.header{
+  position: absolute;
+  width: 100%;
+  color: $color-white;
+  font-family: $font-popins;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    @include media('<lg') {
+      padding: 15px 0  15px 15px;
+      z-index: 9;
+      border: 1px solid $color-white;
+    }
+  }
+
+  & ul {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 80px;
+    display: flex;
+
+    padding: 0px;
+    margin: 0px;
+    @include media('<lg') {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 0 0 0;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+    }
+
+    & li {
+      list-style-type: none;
+      margin: 0 0 0 15px;
+      @include media('>xl'){
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+  
+  &-button {
+    text-align: right;
+    background: none;
+    text-transform: uppercase;
+    color: $color-white;
+    border-radius: 27px;
+
+    & button {
+      border: none;
+      border: 2px solid $color-white;
+      padding: 10px 20px 10px 20px;
+    }
+    
+    @include media('<lg') {
+      display: none;
+    }
+  }
+  
+  .row {
+    align-items: baseline;
+  }
+}
+.hamburger-menu{
+	font-size: 25px;
+  padding: 5px 10px 5px 15px;
+  margin: 0 0 10px 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+	@include media('>=lg') {
+		display: none;
+	}
+}
+.desactive {
+	@include media('<lg') {
+		width: 100%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+    top: 0;
+		left: 0;
+  	overflow: hidden;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 200ms;
+  }
+  @include media('<sm') {
+    width: 100%;
+  }
+}
+.active{
+  width: auto;
+	@include media('<lg') {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    background: $color-malachite;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    transition: all 200ms;
+  }
+  @include media('<sm') {
+    width: 100%;
+  }
+}

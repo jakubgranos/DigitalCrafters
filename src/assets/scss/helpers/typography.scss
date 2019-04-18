@@ -1,0 +1,25 @@
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px;
+}
+
+h2 {
+	@include media('<lg') {
+		font-size: 42px;
+	}
+
+	@include media('>=lg') {
+		font-size: 72px;
+	}
+}
+
+p {
+	line-height: 1.5;
+
+	@include media('<lg') {
+		font-size: 16px;
+	}
+
+	@include media('>=lg') {
+		font-size: 18px;
+	}
+}

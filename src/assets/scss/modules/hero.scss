@@ -1,0 +1,65 @@
+.hero {
+  background: $color-woodsmoke;
+  width: 100%;
+  height: 1011px;
+  @include media('<lg') {
+    height: 800px;
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  &-text {
+    text-align: center;
+    width: 100%;
+    font-family: $font-popins;
+    color: $color-white;
+    & h1 {
+      font-size: 76px;
+      font-weight: 400;
+      line-height: 80px;
+      @include media('<lg') {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bolder;
+      }
+    }
+
+    & p:nth-child(1){
+      opacity: 0.5;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    & p {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 42px;
+      @include media('<lg') {
+        font-size: 20px;
+        line-height: unset;
+        opacity: 0.8;
+      }
+    }
+    
+    & button {
+      border: none;
+      background: none;
+      background: $color-malachite;
+      border: 14px solid $color-pale-sky;
+      border-radius: 80px;
+      padding: 30px 70px 30px 70px;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $color-white;
+      margin: 20px 0 0 0;
+      @include media('<lg') {
+        padding: 20px 30px 20px 30px;
+        font-size: 18px;
+      }
+    }
+  }
+}
