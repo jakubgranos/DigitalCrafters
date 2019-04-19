@@ -1,5 +1,5 @@
 .portfolio {
-
+  padding: 0 0 60px 0;
   &-text{
     text-align: center;
   }
@@ -69,4 +69,7 @@
       }
     }
   }
+}
+.swiper-container {
+  cursor: pointer;
 }

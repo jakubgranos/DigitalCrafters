@@ -1,0 +1,31 @@
+.footer {
+  background: $color-woodsmoke;
+  border-top: 1px solid $color-white;
+  color: $color-white;
+  padding: 15px 0 15px;
+  @include media('<lg'){
+   text-align: center; 
+  }
+}
+.therms{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include media('<lg'){
+   justify-content: center; 
+  }
+  & p {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+}
+.social{
+  text-align: center;
+  cursor: pointer;
+  & i {
+    margin: 0 10px 0 5px;
+  }
+  @include media('<lg'){
+  margin: 15px 0 10px 0;  
+  }
+}

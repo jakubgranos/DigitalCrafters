@@ -1,0 +1,45 @@
+.contact{
+  background: $color-woodsmoke;
+  color: $color-white;
+  &-text{
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  &-border{
+    border: 2px solid $color-white;
+  }
+
+  & form {
+    align-content: center;
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 70px 0;
+    @include media('<md') {
+      width: 100%;
+    }
+    & input, textarea {
+      color: $color-white;
+      background: none;
+      border: none;
+      margin: 10px 0 10px 0;
+      border: 1px solid $color-whitper;
+      padding: 15px 15px 15px 45px;
+    }
+    & i {
+      position: absolute;
+      top: 25px;
+      left: 20px;
+
+      &:nth-child(4){
+        top: 97px;
+      }
+      &:nth-child(5){
+        top: 165px;
+      }
+    }
+  }
+}
