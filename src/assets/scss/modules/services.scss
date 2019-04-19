@@ -1,0 +1,45 @@
+.services {
+  background: $color-malachite;
+  color: $color-white;
+  
+  &-border{
+    border: 2px solid $color-white;
+  }
+  & .row {
+    justify-content: center;
+  }
+  
+  &-text {
+    text-align: center;
+  }
+}
+.services_box {
+  background: $color-white;
+  color: $color-woodsmoke;
+  width: 370px;
+  height: 332px;
+  margin: 50px 10px 10px 10px;
+  box-shadow: 0 11px 35px rgba(34, 34, 34, 0.44);
+  border-radius: 10px;
+  padding: 0px 30px 30px 30px;
+  &-icon {
+    position: relative;
+    top: -40px;
+    left: 20px;
+    & i{
+      color: $color-malachite;
+      background: $color-white;
+      border-radius: 100%;
+      padding: 30px;
+      font-size: 20px;
+    }
+  }
+  & h3 {
+    font-family: $font-popins;
+    font-size: 24px;
+  }
+  
+  & p {
+    font-size: 16px;
+  }
+}

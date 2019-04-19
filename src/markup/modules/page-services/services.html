@@ -1,0 +1,46 @@
+<section class="services">
+  <div class="container">
+    <div class="page-header-text services-text">
+      <h2>Our Services</h2>
+      <div class="page-header-border services-border"></div>
+      <p>We’ll do everything we can to grow your revenue. Our motivation <br>
+        is to drive your business further that you can imagine.</p>
+    </div>
+
+    <div class="row">
+      @@loop('../modules/page-services/services_carousel.html', [
+      {
+        "services_icon": "fas fa-book-open",
+        "services_title": "Landing Page <br> design",
+        "services_paragraph": "Or worse, you’ve heard horror stories about programmers, web designers and writers who sprint out of the starting blocks."
+      },
+      {
+        "services_icon": "far fa-newspaper",
+        "services_title": "Landing Page<br>Design",
+        "services_paragraph": "Or worse, you’ve heard horror stories about programmers, web designers and writers who sprint out of the starting blocks."
+      },
+      {
+        "services_icon": "fas fa-bullhorn",
+        "services_title": "Full Marketing<br>Design",
+        "services_paragraph": "Or worse, you’ve heard horror stories about programmers, web designers and writers who sprint out of the starting blocks."
+      }
+      ])
+    </div>
+    <div class="w-100">
+      <div class="row">
+        @@loop('../modules/page-services/services_carousel.html', [
+        {
+          "services_icon": "far fa-newspaper",
+          "services_title": "Website<br>Development",
+          "services_paragraph": "Or worse, you’ve heard horror stories about programmers, web designers and writers who sprint out of the starting blocks."
+        },
+        {
+          "services_icon": "fas fa-folder",
+          "services_title": "Marketing<br>Materials",
+          "services_paragraph": "Or worse, you’ve heard horror stories about programmers, web designers and writers who sprint out of the starting blocks."
+        }
+        ])
+      </div>
+    </div>
+  </div>
+</section>
